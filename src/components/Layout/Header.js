@@ -5,7 +5,7 @@ import logo from "../../assets/burger.png";
 import classes from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 
-function Header() {
+function Header(props) {
   return (
     <Fragment>
       <header className={classes.header}>
@@ -13,7 +13,7 @@ function Header() {
           <img src={logo} alt="logo" className={classes.logo}></img>
           <h1>Burger Hut</h1>
         </div>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={classes["main-image"]}>
         <img src={mealsImage2} alt="meals"></img>

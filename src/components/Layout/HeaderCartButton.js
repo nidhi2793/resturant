@@ -2,10 +2,10 @@ import { GrCart } from "react-icons/gr";
 import classes from "./HeaderCartButton.module.css";
 import { Fragment } from "react";
 
-function HeaderCartButton() {
+function HeaderCartButton(props) {
   return (
     <Fragment>
-      <button className={classes.button}>
+      <button className={classes.button} onClick={props.onClick}>
         <span className={classes.icon}>
           <GrCart />
         </span>
