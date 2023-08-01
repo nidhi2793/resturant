@@ -4,28 +4,54 @@ import MealItem from "./MealItem/MealItem";
 
 const DUMMY_MEALS = [
   {
-    id: "m1",
-    name: " Crispy chicken Burger",
-    description: "Finest chicken and veggies",
-    price: 350,
+    id: "m2",
+    name: "Veggie Burger",
+    description: "veg patty, fresh lettuce,tomato ",
+    price: 150,
+    type: "veg",
   },
   {
     id: "m2",
-    name: "Paneer Burger",
-    description: "A specialty!",
-    price: 300,
+    name: "Paneer Peppy Burger",
+    description: "Thick Paneer Patty,veggies, sauces ",
+    price: 290,
+    type: "veg",
   },
   {
-    id: "m3",
-    name: "Barbecue Burger",
-    description: "American, raw, meaty",
-    price: 400,
+    id: "m2",
+    name: "Corn & Cheese Burger",
+    description: "Tempting cheese with fresh corn ",
+    price: 230,
+    type: "veg",
   },
+
   {
     id: "m4",
     name: "Aloo tikki Burger",
     description: "Crispy and delicious",
-    price: 250,
+    price: 200,
+    type: "veg",
+  },
+  {
+    id: "m1",
+    name: " Crispy chicken Burger",
+    description: "Finest chicken and veggies",
+    price: 350,
+    type: "non-veg",
+  },
+  {
+    id: "m1",
+    name: " Crispy chicken Cheesy Burger",
+    description: "Lots of cheese loaded &Finest chicken and veggies",
+    price: 380,
+    type: "non-veg",
+  },
+  {
+    id: "m3",
+    name: "Chicken Double Burger",
+    description: "Double crispy chicken patty",
+    price: 420,
+    type: "non-veg",
   },
 ];
 
@@ -37,6 +63,7 @@ function AvailableMeals() {
       name={meal.name}
       description={meal.description}
       price={meal.price}
+      type={meal.type}
     />
   ));
 

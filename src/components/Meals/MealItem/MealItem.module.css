@@ -20,3 +20,15 @@
     color: #ad5502;
     font-size: 1.25rem;
   }
+
+  .nameType{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .type{
+    width:12px;
+    height:12px;
+    margin-left: 5px;
+  }
